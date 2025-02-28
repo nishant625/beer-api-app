@@ -4,7 +4,7 @@ export default function BeerCard({ beer }) {
   const [imgSrc, setImgSrc] = useState(beer.image || "/placeholder.jpg");
 
   return (
-    <div className="relative bg-gray-800 rounded-xl p-5 shadow-xl overflow-hidden hover:scale-105 transition-all duration-300">
+    <div className="relative bg-[#A7BEAE] rounded-xl p-5 shadow-xl overflow-hidden hover:scale-105 transition-all duration-300">
       {/* Image Container with Tilted Effect */}
       <div className="relative">
         <img
@@ -19,7 +19,7 @@ export default function BeerCard({ beer }) {
       {/* Beer Info */}
       <div className="mt-5 text-center">
         <h2 className="text-xl font-bold">{beer.name}</h2>
-        <p className="text-gray-400 mt-2 text-sm">
+        <p className="text-[#B85042] mt-2 text-sm">
           {beer.price || "No price available"}
         </p>
       </div>
